@@ -16,43 +16,6 @@ This is a personal portfolio project built using React and Styled Components, de
 - Contact form for recruiters or clients to reach out to me
 - Fully responsive design, adapted for various devices (desktops, tablets, mobile phones)
 
-## 📁 Folder Structure
-
-📦cintra
-│
-├── 📂public
-├── 📂src
-│ ├── 📂assets
-│ │ ├── 📂fonts
-│ │ └── 📂img
-│ ├── 📂components
-│ │ ├── 📂 common
-│ │ │ ├── 📂 button
-│ │ │ └── 📜 index.jsx
-│ │ │ ├── 📜Column.jsx
-│ │ │ ├── 📜Divider.jsx
-│ │ │ ├── 📜Layout.jsx
-│ │ │ ├── 📜PageLayout.jsx
-│ │ │ ├── 📜Row.jsx
-│ │ │ ├── 📜SectionTitle.jsx
-│ │ └── 📂 navbar
-│ ├── 📂constants
-│ │ └── 📜colors.js
-│ ├── 📂hooks
-│ │ └── 📜useMediaQuery.js
-│ ├── 📂utils
-│ │ └── 📜texts.js
-│ ├── 📂views
-│ │ └── 📂about
-│ │ └── 📂contact
-│ │ └── 📂home
-│ │ └── 📂projects
-│ │ └── 📂skills
-│ ├── 📜App.js
-│ ├── 📜GlobalStyle.jsx
-│ ├── 📜index.js
-└── 📜README.md
-
 ## 🛠️ How to Run the Project
 
 1. Clone the repository:
