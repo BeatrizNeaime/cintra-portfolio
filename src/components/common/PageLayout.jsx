@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const PageLayout = styled.div`
-  width: 85%;
+  width: 85vw;
   margin: 0 auto;
   padding-top: 1rem;
   min-height: 100vh;
@@ -20,6 +20,7 @@ const PageLayout = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
 `;
 

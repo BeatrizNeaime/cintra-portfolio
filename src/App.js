@@ -8,10 +8,12 @@ import Skills from './views/skills';
 import Divider from './components/common/Divider';
 import Projects from './views/projects';
 import Contact from './views/contact';
+import useMediaQuery from './hooks/useMediaQuery';
 
 function App() {
   const [language, setLanguage] = useState("en");
   const [selectedPage, setSelectedPage] = useState(window.localStorage.getItem("language") || "en");
+  const desktop = useMediaQuery("(min-width: 1024px)");
 
   useEffect(() => {
     setLanguage(window.localStorage.getItem("language") || "en");
@@ -42,7 +44,7 @@ function App() {
           selectedPage={selectedPage}
         />
       </motion.div>
-      <Divider />
+      {desktop && <Divider />}
       <motion.div
         margin="0 0 -200px 0"
         amount="all"

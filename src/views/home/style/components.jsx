@@ -4,6 +4,10 @@ import { gradients } from "../../../constants/colors";
 const ProfilePicture = styled.img`
   max-height: 500px;
   width: auto;
+
+  @media screen and (max-width: 768px) {
+    max-height: 300px;
+  }
 `;
 
 const LandingTitle = styled.h1`
@@ -20,6 +24,11 @@ const LandingTitle = styled.h1`
   text-align: left;
   font-size: 80px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+    text-align: center;
+  }
 `;
 
 const LandingSubtitle = styled.p`

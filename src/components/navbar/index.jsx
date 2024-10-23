@@ -4,6 +4,7 @@ import NavLink from "./components/NavLink";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Language from "./components/Language";
+import { colors } from "../../constants/colors";
 
 const Navbar = ({ selectedPage, setSelectedPage, language, setLanguage }) => {
   const desktop = useMediaQuery("(min-width: 1024px)");
@@ -49,6 +50,19 @@ const Navbar = ({ selectedPage, setSelectedPage, language, setLanguage }) => {
           />
           <Language language={language} setLanguage={setLanguage} />
         </NavbarNav>
+      )}
+
+      {!desktop && (
+        <i
+          class="fa-solid fa-bars"
+          style={{
+            color: colors.yellow.details,
+            margin: 0,
+            position: "absolute",
+            right: "15px",
+            top: "30%",
+          }}
+        ></i>
       )}
     </NavbarContainer>
   );
